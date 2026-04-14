@@ -20,6 +20,35 @@
 .item2{
     grid-column: 1/span 3;
 }
+.search-form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.mic-btn{
+    background-color: rgba(0, 0, 0, 0.612);
+    border: 1.5px solid black;
+    border-left: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 8px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.mic-btn:hover{
+    border-color: rgba(0, 0, 255, 0.441);
+}
+.mic-active{
+    border-color: rgba(255, 0, 0, 0.7);
+    animation: pulse 1s infinite;
+}
+@keyframes pulse{
+    0%  { opacity: 1; }
+    50% { opacity: 0.4; }
+    100%{ opacity: 1; }
+}
 input{
     display: block;
     background-color: rgba(0, 0, 0, 0.612);
